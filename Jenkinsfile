@@ -9,7 +9,7 @@ pipeline {
         agent any 
         when {
          beforeInput true
-         branch 'production'
+         branch 'qa'
         }
       }
         stage("build") {
