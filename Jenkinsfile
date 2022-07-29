@@ -5,11 +5,11 @@ pipeline {
     
     stages    {
       
-      stage('input') {
-        agent any 
-        when {
-         beforeInput true
-         branch 'qa'
+        stage('input') {
+          agent any 
+          when {
+           beforeInput true
+           branch 'qa'
         }
       }
         stage("build") {
