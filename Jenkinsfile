@@ -4,7 +4,14 @@ pipeline {
     agent any
     
     stages    {
-    
+      
+      stage('input') {
+        agent any 
+        when {
+         beforeInput true
+         branch 'production'
+        }
+      }
         stage("build") {
           
             steps {
