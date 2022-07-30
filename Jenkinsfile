@@ -5,7 +5,7 @@ pipeline {
     
     stages    {
       
-        stage('input') {
+        stage("input") {
           agent any 
           when {
            beforeInput true
